@@ -13,7 +13,7 @@ public class Manager extends Employee {
     }
 
     public double getBonus(){
-        return super.salary;
+        return super.getBonus() + super.getSalary();
     }
 
     public boolean authenticate(int password) {

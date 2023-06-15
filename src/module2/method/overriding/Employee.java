@@ -4,7 +4,7 @@ public class Employee {
 
     private String name;
     private String CPF;
-    protected double salary;
+    private double salary;
 
     public String getName() {
         return name;
@@ -31,6 +31,6 @@ public class Employee {
     }
 
     public double getBonus() {
-        return this.salary * 0.1;
+        return this.salary * 0.05;
     }
 }
