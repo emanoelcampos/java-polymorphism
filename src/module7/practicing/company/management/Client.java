@@ -1,4 +1,4 @@
-package module7.practicing;
+package module7.practicing.company.management;
 
 public class Client implements Authenticated {
 

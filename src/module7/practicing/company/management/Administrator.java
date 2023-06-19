@@ -1,17 +1,17 @@
-package module7.practicing;
+package module7.practicing.company.management;
 
-public class Manager extends Employee implements Authenticated {
+public class Administrator extends Employee implements Authenticated {
 
     AuthenticatedUtil authenticator;
 
-    public Manager() {
+    public Administrator() {
         this.authenticator = new AuthenticatedUtil();
         System.out.println("instancia de authenticator criada");
     }
 
     @Override
-    public double getBonus(){
-        return super.getSalary();
+    public double getBonus() {
+        return 50;
     }
 
     @Override
@@ -23,5 +23,4 @@ public class Manager extends Employee implements Authenticated {
     public boolean authenticate(int password) {
         return this.authenticator.authenticate(password);
     }
-
 }
